@@ -1,12 +1,12 @@
 html {
     height: 100%;
+    font-size: 14px;
 }
 
 body {
     padding: 0;
     margin: 0;
     height: 100%;
-    font-size: 16px;
 }
 
 main {
@@ -44,7 +44,7 @@ h1#perfume-name {
 
 p {
     color: hsl(228, 12%, 48%);
-    line-height: 1.5;
+    line-height: 1.8;
     margin: 0;
 }
 
@@ -61,16 +61,16 @@ del {
 .image-container {
     height: 40%;
     width: 100%;
+    background-image: url("../images/image-product-mobile.jpg");
+    background-position: center;
+    background-size: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    width: 15px;
+    height: 16px;
 }
 
 .text-container {
@@ -79,7 +79,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.5em;
+    padding: 1.75em;
     box-sizing: border-box;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -96,7 +96,7 @@ img {
 }
 
 .discount-price {
-    margin-left: 2em;
+    margin-left: 3em;
 }
 
 button {
@@ -121,4 +121,84 @@ button:hover {
 button p {
     margin-left: 0.5em;
     color: hsl(0, 0%, 100%);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 640px) {
+    .container {
+        max-width: 80%;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    p,
+    del {
+        font-size: 1.2rem;
+    }
+    img {
+        width: 20px;
+        height: 21px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        height: 60%;
+        display: flex;
+    }
+    h1 {
+        font-size: 2.1rem;
+    }
+    p,
+    del {
+        font-size: 1.1rem;
+    }
+    img {
+        width: 16px;
+        height: 17px;
+    }
+    .image-container {
+        width: 50%;
+        height: 100%;
+        background-image: url("../images/image-product-desktop.jpg");
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+    }
+    .text-container {
+        width: 50%;
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 70%;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    p,
+    del {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+    img {
+        width: 17px;
+        height: 18px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 60%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .container {
+        max-width: 50%;
+    }
 }
