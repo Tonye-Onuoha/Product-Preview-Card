@@ -144,7 +144,7 @@ button p {
 
 @media screen and (min-width: 768px) {
     .container {
-        height: 60%;
+        height: 75%;
         display: flex;
     }
     h1 {
